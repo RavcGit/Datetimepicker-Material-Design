@@ -873,7 +873,7 @@ var datetimepickerFactory = function(e) {
             var d, u, P, A, Y, j, H = e('<div class="xdsoft_datetimepicker xdsoft_noselect"></div>'),
                 J = e('<div class="xdsoft_copyright"><a target="_blank" href="http://xdsoft.net/jqplugins/datetimepicker/">xdsoft.net</a></div>'),
                 z = e('<div class="xdsoft_datepicker active"></div>'),
-                I = e('<div class="xdsoft_monthpicker"><div class="d-flex flex-row"><div class="p-1"><i class="btn fa fa-chevron-circle-left" aria-hidden="true"></i></div><div class="p-1"><i class="btn fa fa-home" aria-hidden="true"></i></div><div class="p-1"><div class="xdsoft_label xdsoft_month"><span></span></div></div><div class="p-1"><div class="xdsoft_label xdsoft_year"><span></span></div></div><div class="p-1"><i class="btn fa fa-chevron-circle-right" aria-hidden="true"></i></div></div></div>'),
+                I = e('<div class="xdsoft_monthpicker"> <div class="container-fluid"> <div class="row mt-1"> <div class="col-md-6"> <div class="xdsoft_label xdsoft_month"><span class="lead"></span></div></div><div class="col-md-4 justify-content-end"> <div class="xdsoft_label xdsoft_year ml-3"><span class="lead"></span></div></div></div><div class="row"> <div class="col-md-4"> <i class="btn fa fa-chevron-circle-left hover-op" aria-hidden="true"></i> </div><div class="col-md-4"> <i class="btn fa fa-home hover-op" aria-hidden="true"></i> </div><div class="col-md-4"> <i class="btn fa fa-chevron-circle-right hover-op" aria-hidden="true"></i> </div></div></div></div>'),
                 N = e('<div class="xdsoft_calendar"></div>'),
                 L = e('<div class="xdsoft_timepicker active"><div class="xdsoft_time_box"></div></div>'),
                 E = L.find(".xdsoft_time_box").eq(0),
