@@ -646,8 +646,8 @@ var datetimepickerFactory = function(e) {
             withoutCopyright: !0,
             inverseButton: !1,
             hours12: !1,
-            next: "fa-chevron-circle-right",
-            prev: "fa-chevron-circle-left",
+            next: "dtp-icon-chevron-circle-right",
+            prev: "dtp-icon-chevron-circle-left",
             dayOfWeekStart: 0,
             parentID: "body",
             timeHeightInTimePicker: 25,
@@ -873,7 +873,7 @@ var datetimepickerFactory = function(e) {
             var d, u, P, A, Y, j, H = e('<div class="xdsoft_datetimepicker xdsoft_noselect"></div>'),
                 J = e('<div class="xdsoft_copyright"><a target="_blank" href="http://xdsoft.net/jqplugins/datetimepicker/">xdsoft.net</a></div>'),
                 z = e('<div class="xdsoft_datepicker active"></div>'),
-                I = e('<div class="xdsoft_monthpicker"> <div class="container-fluid"> <div class="row mt-1"> <div class="col-md-6"> <div class="xdsoft_label xdsoft_month"><span class="lead"></span></div></div><div class="col-md-4 justify-content-end"> <div class="xdsoft_label xdsoft_year ml-3"><span class="lead"></span></div></div></div><div class="row"> <div class="col-md-4"> <i class="btn fa fa-chevron-circle-left hover-op" aria-hidden="true"></i> </div><div class="col-md-4"> <i class="btn fa fa-home hover-op" aria-hidden="true"></i> </div><div class="col-md-4"> <i class="btn fa fa-chevron-circle-right hover-op" aria-hidden="true"></i> </div></div></div></div>'),
+                I = e('<div class="xdsoft_monthpicker"> <div class="container-fluid"> <div class="row mt-1"> <div class="col-md-6"> <div class="xdsoft_label xdsoft_month"><span class="lead"></span></div></div><div class="col-md-4 justify-content-end"> <div class="xdsoft_label xdsoft_year ml-3"><span class="lead"></span></div></div></div><div class="row"> <div class="col-md-4"> <i class="btn dtp-icon dtp-icon-chevron-circle-left" aria-hidden="true"></i> </div><div class="col-md-4"> <i class="btn dtp-icon dtp-icon-home" aria-hidden="true"></i> </div><div class="col-md-4"> <i class="btn dtp-icon dtp-icon-chevron-circle-right" aria-hidden="true"></i> </div></div></div></div>'),
                 N = e('<div class="xdsoft_calendar"></div>'),
                 L = e('<div class="xdsoft_timepicker active"><div class="xdsoft_time_box"></div></div>'),
                 E = L.find(".xdsoft_time_box").eq(0),
@@ -923,7 +923,7 @@ var datetimepickerFactory = function(e) {
                         i = n.parseDate(h[0], C.formatDate), s = n.parseDate(h[1], C.formatDate), d = h[2], c = h[3]
                     }
                     for (; i <= s;) u = new t(i, d, c), l = n.formatDate(i, C.formatDate), i.setDate(i.getDate() + 1), void 0 !== o[l] ? (f = o[l].desc) && f.length && u.desc && u.desc.length && (o[l].desc = f + "\n" + u.desc) : o[l] = u
-                }), C.highlightedDates = e.extend(!0, [], o)), r.disabledDates && e.isArray(r.disabledDates) && r.disabledDates.length && (C.disabledDates = e.extend(!0, [], r.disabledDates)), r.disabledWeekDays && e.isArray(r.disabledWeekDays) && r.disabledWeekDays.length && (C.disabledWeekDays = e.extend(!0, [], r.disabledWeekDays)), !C.open && !C.opened || C.inline || a.trigger("open.xdsoft"), C.inline && (U = !0, H.addClass("xdsoft_inline"), a.after(H).hide()), C.inverseButton && (C.next = "fa-chevron-circle-left", C.prev = "fa-chevron-circle-right"), C.datepicker ? z.addClass("active") : z.removeClass("active"), C.timepicker ? L.addClass("active") : L.removeClass("active"), C.value && (Y.setCurrentTime(C.value), a && a.val && a.val(Y.str)), isNaN(C.dayOfWeekStart) ? C.dayOfWeekStart = 0 : C.dayOfWeekStart = parseInt(C.dayOfWeekStart, 10) % 7, C.timepickerScrollbar || E.xdsoftScroller(C, "hide"), C.minDate && /^[\+\-](.*)$/.test(C.minDate) && (C.minDate = n.formatDate(Y.strToDateTime(C.minDate), C.formatDate)), C.maxDate && /^[\+\-](.*)$/.test(C.maxDate) && (C.maxDate = n.formatDate(Y.strToDateTime(C.maxDate), C.formatDate)), C.minDateTime && /^\+(.*)$/.test(C.minDateTime) && (C.minDateTime = Y.strToDateTime(C.minDateTime).dateFormat(C.formatDate)), V.toggle(C.showApplyButton), I.find(".fa-home").css("visibility", C.todayButton ? "visible" : "hidden"), I.find("." + C.prev).css("visibility", C.prevButton ? "visible" : "hidden"), I.find("." + C.next).css("visibility", C.nextButton ? "visible" : "hidden"), s(C), C.validateOnBlur && a.off("blur.xdsoft").on("blur.xdsoft", function() {
+                }), C.highlightedDates = e.extend(!0, [], o)), r.disabledDates && e.isArray(r.disabledDates) && r.disabledDates.length && (C.disabledDates = e.extend(!0, [], r.disabledDates)), r.disabledWeekDays && e.isArray(r.disabledWeekDays) && r.disabledWeekDays.length && (C.disabledWeekDays = e.extend(!0, [], r.disabledWeekDays)), !C.open && !C.opened || C.inline || a.trigger("open.xdsoft"), C.inline && (U = !0, H.addClass("xdsoft_inline"), a.after(H).hide()), C.inverseButton && (C.next = "dtp-icon-chevron-circle-left", C.prev = "dtp-icon-chevron-circle-right"), C.datepicker ? z.addClass("active") : z.removeClass("active"), C.timepicker ? L.addClass("active") : L.removeClass("active"), C.value && (Y.setCurrentTime(C.value), a && a.val && a.val(Y.str)), isNaN(C.dayOfWeekStart) ? C.dayOfWeekStart = 0 : C.dayOfWeekStart = parseInt(C.dayOfWeekStart, 10) % 7, C.timepickerScrollbar || E.xdsoftScroller(C, "hide"), C.minDate && /^[\+\-](.*)$/.test(C.minDate) && (C.minDate = n.formatDate(Y.strToDateTime(C.minDate), C.formatDate)), C.maxDate && /^[\+\-](.*)$/.test(C.maxDate) && (C.maxDate = n.formatDate(Y.strToDateTime(C.maxDate), C.formatDate)), C.minDateTime && /^\+(.*)$/.test(C.minDateTime) && (C.minDateTime = Y.strToDateTime(C.minDateTime).dateFormat(C.formatDate)), V.toggle(C.showApplyButton), I.find(".dtp-icon-home").css("visibility", C.todayButton ? "visible" : "hidden"), I.find("." + C.prev).css("visibility", C.prevButton ? "visible" : "hidden"), I.find("." + C.next).css("visibility", C.nextButton ? "visible" : "hidden"), s(C), C.validateOnBlur && a.off("blur.xdsoft").on("blur.xdsoft", function() {
                     if (C.allowBlank && (!e.trim(e(this).val()).length || "string" == typeof C.mask && e.trim(e(this).val()) === C.mask.replace(/[0-9]/g, "_"))) e(this).val(null), H.data("xdsoft_datetime").empty();
                     else {
                         var t = n.parseDate(e(this).val(), C.format);
@@ -987,12 +987,12 @@ var datetimepickerFactory = function(e) {
                 }, t.currentTime = this.now()
             }, V.on("touchend click", function(e) {
                 e.preventDefault(), H.data("changed", !0), Y.setCurrentTime(i()), a.val(Y.str()), H.trigger("close.xdsoft")
-            }), I.find(".fa-home").on("touchend mousedown.xdsoft", function() {
+            }), I.find(".dtp-icon-home").on("touchend mousedown.xdsoft", function() {
                 H.data("changed", !0), Y.setCurrentTime(0, !0), H.trigger("afterOpen.xdsoft")
             }).on("dblclick.xdsoft", function() {
                 var e, t, n = Y.getCurrentTime();
                 n = new Date(n.getFullYear(), n.getMonth(), n.getDate()), e = Y.strToDate(C.minDate), n < (e = new Date(e.getFullYear(), e.getMonth(), e.getDate())) || (t = Y.strToDate(C.maxDate), n > (t = new Date(t.getFullYear(), t.getMonth(), t.getDate())) || (a.val(Y.str()), a.trigger("change"), H.trigger("close.xdsoft")))
-            }), I.find(".fa-chevron-circle-left,.fa-chevron-circle-right").on("touchend mousedown.xdsoft", function() {
+            }), I.find(".dtp-icon-chevron-circle-left,.dtp-icon-chevron-circle-right").on("touchend mousedown.xdsoft", function() {
                 var t = e(this),
                     a = 0,
                     n = !1;
@@ -1001,7 +1001,7 @@ var datetimepickerFactory = function(e) {
                 }(500), e([C.ownerDocument.body, C.contentWindow]).on("touchend mouseup.xdsoft", function t() {
                     clearTimeout(a), n = !0, e([C.ownerDocument.body, C.contentWindow]).off("touchend mouseup.xdsoft", t)
                 })
-            }), L.find(".fa-chevron-circle-left,.fa-chevron-circle-right").on("touchend mousedown.xdsoft", function() {
+            }), L.find(".dtp-icon-chevron-circle-left,.dtp-icon-chevron-circle-right").on("touchend mousedown.xdsoft", function() {
                 var t = e(this),
                     a = 0,
                     n = !1,
