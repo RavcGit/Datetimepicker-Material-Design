@@ -50,22 +50,29 @@ No HTML podemos implementar os seguintes exemplos que iremos testar:
 E para inicializar o plugin utilizamos o seguinte Jquery:
 ```js
 jQuery('#datepicker').datetimepicker({
-  timepicker:false
+  timepicker:false, // Oculta o Timepicker
+  format: 'd/m/Y' // Formato da data do input, usando o 'd/m/Y' ele não irá mostrar a hroa atual junto.
 });
 jQuery('#timepicker').datetimepicker({
-  datepicker:false
+  datepicker:false, // Oculta o Datepicker
+  format: 'H:i', // Colocando uma formatação no input você remove alguns bugs onde ele pega os minutos aleatórios. 
+  allowTimes:['07:00','07:30','08:00','08:30','09:00','09:30','19:00','20:00'] // Intervalos de tempo que irão aparecer no timepicker
 });
 jQuery('#datepicker-inline').datetimepicker({
-  inline:true,
-  timepicker:false
+  inline:true, // Inline obriga o picker ficar ativo e oculta o input.
+  timepicker:false,
+  format: 'd/m/Y'
 });
 jQuery('#timepicker-inline').datetimepicker({
   inline:true,
-  datepicker:false
+  datepicker:false,
+  format: 'H:i',
+  allowTimes:['07:00','07:30','08:00','08:30','09:00','09:30','19:00','20:00']
 });
 jQuery('#datetimepicker').datetimepicker({
   timepicker:true,
-  datepicker:true
+  datepicker:true,
+  format: 'd/m/Y H:i' // A função 'format' é usada para o input todo, se quiser formatar somente a hora terá que usar o 'formatTime' e para formatar somente a data terá que usar o 'formatDate'.
 });
 ```
 
