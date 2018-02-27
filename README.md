@@ -15,7 +15,7 @@ Atualmente esse plugin tem como requirimento para funcionar os seguintes compone
   ```
 - [jQuery 3.3+](https://jquery.com/), funções de javascript foram implementadas com o jquery.
   - Javascript:
-  ```js
+  ```html
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   ```
 ## Começando a utilizar
