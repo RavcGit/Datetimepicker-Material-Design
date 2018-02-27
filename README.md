@@ -24,27 +24,27 @@ No HTML podemos implementar os seguintes exemplos que iremos testar:
 ```html
 <!-- Input somente com visualização da Data -->
 <div class="input-group mb-3">
-  <input id="datepicker" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  <input id="datepicker" type="text" class="form-control" placeholder="Datetime" aria-label="Datetime" aria-describedby="basic-addon1">
 </div>
 
 <!-- Input somente com visualização da Hora -->
 <div class="input-group mb-3">
-  <input id="timepicker" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  <input id="timepicker" type="text" class="form-control" placeholder="Datetime" aria-label="Datetime" aria-describedby="basic-addon1">
 </div>
 
 <!-- Input somente com visualização da Data inline -->
 <div class="input-group mb-3">
-  <input id="datepicker-inline" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  <input id="datepicker-inline" type="text" class="form-control" placeholder="Datetime" aria-label="Datetime" aria-describedby="basic-addon1">
 </div>
 
 <!-- Input somente com visualização da Hora inline -->
 <div class="input-group mb-3">
-  <input id="timepicker-inline" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  <input id="timepicker-inline" type="text" class="form-control" placeholder="Datetime" aria-label="Datetime" aria-describedby="basic-addon1">
 </div>
 
 <!-- Input com visualização da Data/hora -->
 <div class="input-group mb-3">
-  <input id="datetimepicker" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  <input id="datetimepicker" type="text" class="form-control" placeholder="Datetime" aria-label="Datetime" aria-describedby="basic-addon1">
 </div>
 ```
 E para inicializar o plugin utilizamos o seguinte Jquery:
