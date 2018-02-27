@@ -1,9 +1,45 @@
 # Datetimepicker-Material-Design
-Datetimepicker criado com o Bootstrap e o Font Awesome, foi utilizado como base o Datetimepicker do link: https://xdsoft.net/jqplugins/datetimepicker/ 
+Utilizado como base o Datetimepicker da [XDSOFT](https://xdsoft.net/jqplugins/datetimepicker/).
 
-![datetimepicker-att](https://user-images.githubusercontent.com/31331654/35274930-28a0cecc-0025-11e8-827d-f97d0e25fbba.png)
+## Requirimentos
+Atualmente esse plugin tem como requirimento para funcionar os seguintes componentes:
+- [Bootstrap 4.0+](http://getbootstrap.com/), layout de estrutura foi totalmente usada em cima do Bootstrap 4.
+  - Javascript:
+  ```js
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  ```
+- [jQuery 3.3+](https://jquery.com/), funções de javascript foram implementadas com o jquery.
+  - Javascript:
+  ```js
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  ```
+## Começando a utilizar
 
-## Dependências
-• Bootstrap 4.0+
+No HTML podemos implementar os seguintes exemplos que iremos testar:
+```html
+<!-- Input somente com visualização da Data -->
+<div class="input-group mb-3">
+  <input id="datepicker" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
 
-• jQuery
+<!-- Input somente com visualização da Hora -->
+<div class="input-group mb-3">
+  <input id="datepicker" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<!-- Input somente com visualização da Data inline -->
+<div class="input-group mb-3">
+  <input id="datepicker" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<!-- Input somente com visualização da Hora inline -->
+<div class="input-group mb-3">
+  <input id="datepicker" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<!-- Input com visualização da Data/hora -->
+<div class="input-group mb-3">
+  <input id="datepicker" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+```
